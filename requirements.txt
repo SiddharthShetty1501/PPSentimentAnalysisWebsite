@@ -5,3 +5,4 @@ beautifulsoup4==4.9.3
 transformers==4.11.3
 torch==1.9.1
 matplotlib==3.4.3
+numpy==1.25.2
