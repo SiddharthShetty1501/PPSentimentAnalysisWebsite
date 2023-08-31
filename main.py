@@ -123,10 +123,10 @@ elif page == "User Guide":
     st.write("Welcome to the User Guide page!")
 
     st.write("Open your Product Page and click on Ratings:")
-    st.image("picture1.png", use_column_width=True)
+    st.image("Picture1.png", use_column_width=True)
 
     st.write("Scroll down till you find this and click it:")
-    st.image("picture2.png", use_column_width=True)
+    st.image("Picture2.png", use_column_width=True)
 
     st.write("Copy the URL of this page and paste it into this website for scraping:")
-    st.image("picture3.png", use_column_width=True)
+    st.image("Picture3.png", use_column_width=True)
