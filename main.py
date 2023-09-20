@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from transformers import RobertaTokenizer, RobertaForSequenceClassification
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import matplotlib.pyplot as plt
 
@@ -21,8 +21,9 @@ st.markdown(
 )
 
 model_name = "textattack/roberta-base-SST-2"
-tokenizer = RobertaTokenizer.from_pretrained(model_name)
-model = RobertaForSequenceClassification.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
+
 
 def scrape_amazon_reviews(url, num_pages=1):
     all_reviews = []
@@ -123,10 +124,10 @@ elif page == "User Guide":
     st.write("Welcome to the User Guide page!")
 
     st.write("Open your Product Page and click on Ratings:")
-    st.image("Picture1.png", use_column_width=True)
+    st.image("picture1.png", use_column_width=True)
 
     st.write("Scroll down till you find this and click it:")
-    st.image("Picture2.png", use_column_width=True)
+    st.image("picture2.png", use_column_width=True)
 
     st.write("Copy the URL of this page and paste it into this website for scraping:")
-    st.image("Picture3.png", use_column_width=True)
+    st.image("picture3.png", use_column_width=True)
