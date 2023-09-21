@@ -3,6 +3,6 @@ pandas==2.1.0
 requests==2.26.0
 beautifulsoup4==4.9.3
 transformers==4.11.3
-torch==1.9.1
+torch==2.0.1
 matplotlib==3.4.3
 numpy==1.25.2
